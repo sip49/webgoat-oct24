@@ -33,7 +33,7 @@ public final class ContactController {
 
     @GetMapping("/update-contact")
     public @ResponseBody
-    void updateContact(@RequestBody String xml) throws SQLException {
+    void updateContactRecord(@RequestBody String xml) throws SQLException {
         // get the xml from our partner to update our contact record
         Connection connection = dataSource.getConnection();
         XStream xstream = new XStream();
