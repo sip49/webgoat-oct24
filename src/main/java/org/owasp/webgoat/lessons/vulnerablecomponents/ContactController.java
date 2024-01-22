@@ -19,7 +19,7 @@ public final class ContactController {
 
     @GetMapping("/get-contact-phone")
     public @ResponseBody
-    String getContactPhone(@RequestParam String userId) throws SQLException {
+    String getContactPhoneNumber(@RequestParam String userId) throws SQLException {
       // get the phone number from the database
       Connection conn = dataSource.getConnection();
       String sql = "select phone from contacts where userid = '" + userId + "'";
