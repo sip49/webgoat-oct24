@@ -146,7 +146,7 @@
     <xstream.version>1.4.5</xstream.version>
     <!-- do not update necessary for lesson -->
     <zxcvbn.version>1.5.2</zxcvbn.version>
-    <versions.java-security-toolkit>1.1.1</versions.java-security-toolkit>
+    <versions.java-security-toolkit-xstream>1.0.2</versions.java-security-toolkit-xstream>
   </properties>
 
   <dependencyManagement>
@@ -251,8 +251,8 @@
       </dependency>
       <dependency>
         <groupId>io.github.pixee</groupId>
-        <artifactId>java-security-toolkit</artifactId>
-        <version>${versions.java-security-toolkit}</version>
+        <artifactId>java-security-toolkit-xstream</artifactId>
+        <version>${versions.java-security-toolkit-xstream}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -401,7 +401,7 @@
     </dependency>
     <dependency>
       <groupId>io.github.pixee</groupId>
-      <artifactId>java-security-toolkit</artifactId>
+      <artifactId>java-security-toolkit-xstream</artifactId>
     </dependency>
   </dependencies>
 
